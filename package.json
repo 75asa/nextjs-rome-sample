@@ -11,7 +11,8 @@
     "lint:apply-unsafe": "rome check src --apply-unsafe",
     "format": "rome format src",
     "format:write": "rome format src --write",
-    "ci": "rome ci src"
+    "rome:ci": "rome ci src",
+    "test": "vitest run"
   },
   "dependencies": {
     "@types/node": "20.2.5",
@@ -26,6 +27,13 @@
     "typescript": "5.1.3"
   },
   "devDependencies": {
-    "rome": "^12.1.3"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "jsdom": "^22.1.0",
+    "rome": "^12.1.3",
+    "undefined": "^0.1.0",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.32.0"
   }
 }
